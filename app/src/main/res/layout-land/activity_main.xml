@@ -8,10 +8,8 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="471dp"
-        android:paddingTop="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gridLayout"
         app:layout_constraintHorizontal_bias="0.5"
@@ -99,16 +97,14 @@
 
     <android.support.v7.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="285dp"
-        android:layout_height="318dp"
-        android:padding="0dp"
-        android:paddingBottom="30dp"
+        android:layout_width="269dp"
+        android:layout_height="320dp"
+        android:paddingTop="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/frameLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        app:layout_constraintStart_toStartOf="parent">
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -201,16 +197,5 @@
             app:layout_column="2"
             app:layout_row="0" />
     </android.support.v7.widget.GridLayout>
-
-    <Button
-        android:id="@+id/clearreset"
-        android:layout_width="50dp"
-        android:layout_height="125dp"
-        android:layout_marginEnd="28dp"
-        android:onClick="resetAll"
-        android:text="clear"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
-        tools:layout_editor_absoluteY="144dp" />
 
 </android.support.constraint.ConstraintLayout>
